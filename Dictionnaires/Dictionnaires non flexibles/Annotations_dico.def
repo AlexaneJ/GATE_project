@@ -1,0 +1,12 @@
+Adj_grandeur.lst:Description_physique:Grandeur
+Adj_forme.lst:Description_physique:Forme
+Adj_beauté_âge.lst:Description_physique:Beauté/âge
+Adj_cheveux.lst:Description_physique:Cheveux
+Adj_force.lst:Description_physique:Force
+Pays.lst:Lieux:Pays
+Îles.lst:Lieux:Îles
+Lieux_fermés.lst:Lieux:Lieux_fermés
+Tissus.lst:Matières:Tissus
+Couleurs.lst:Matières:Couleurs
+Passé.lst:Ref_temporelles:Passé
+Général.lst:Ref_temporelles:Général
