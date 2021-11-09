@@ -1,0 +1,5 @@
+color.lst:Physical_description:Color
+littleMammal.lst:Specie:LittleMammal
+size.lst:Physical_description:Size
+Appearance_ajd.lst:Physical_description:Appearance_adj
+insects.lst:Specie:Insect

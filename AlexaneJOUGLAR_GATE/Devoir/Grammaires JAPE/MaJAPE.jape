@@ -1,0 +1,15 @@
+Phase:	ImportantMoment
+Input: Token SpaceToken
+Options: control = appelt
+
+Rule:MomentRule
+({Token.orth == upperInitial}
+({SpaceToken}|{Token.kind == punctuation}|{Token.kind == word})*: before
+ (({Token.string == "when"}|{Token.string == "sudden"}|{Token.string == "suddenly"}|{Token.string == "out of the sudden"}|{Token.string == "all of a sudden"}|{Token.string == "swiftly"}|{Token.string == "abruptly"}|{Token.string == "quickly"}|{Token.string == "shortly"}|{Token.string == "all at one"}|{Token.string == "on spur of moment"}|{Token.string == "without warning"}|{Token.string == "asudden"}|{Token.string == "forthwith"}|{Token.string == "unexpectedly"})+):adverb
+((({SpaceToken}|{Token.kind == punctuation}|{Token.kind == word})*)|(({Token.category == VBD}|{Token.category == VBP}|{Token.category == VB})*): verbB):time
+{Token.string =="."}):dd
+-->
+:dd.Moment= {rule = "MomentRule"},
+:before.BeforeAdverb= {rule= "MomentRule"},
+:adverb.Word= {rule = "MomentRule"},
+:time.Action= {rule = "MomentRule"}

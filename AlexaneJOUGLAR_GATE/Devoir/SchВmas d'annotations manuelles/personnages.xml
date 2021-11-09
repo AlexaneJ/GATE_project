@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
+ <element name="personnages">
+  <complexType>
+  	<attribute name="id" type="kind"/>
+	<attribute name="personnages" default="personnage principal">
+    	<simpleType>
+     		<restriction base="string">
+      	<enumeration value="Personnage principal"/>
+		<enumeration value="Personnage secondaire"/>
+	  		</restriction>
+    	</simpleType>
+   	</attribute>
+  </complexType>
+ </element>
+</schema>
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
+ <element name="pensées">
+  <complexType>
+  	<attribute name="id" type="kind"/>
+	<attribute name="pensées" default="direct">
+    	<simpleType>
+     		<restriction base="string">
+      	<enumeration value="pensées à voix haute (guillemets)"/>
+		<enumeration value="pensée sans guillemets"/>
+     		</restriction>
+    	</simpleType>
+   	</attribute>
+  </complexType>
+ </element>
+</schema>
+

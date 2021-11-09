@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
+ <element name="sexe">
+  <complexType>
+  	<attribute name="id" type="kind"/>
+	<attribute name="sexe" default="extérieurs">
+    	<simpleType>
+     		<restriction base="string">
+      	<enumeration value="Figurant masculin"/>
+		<enumeration value="Figurant féminin"/>
+	  		</restriction>
+    	</simpleType>
+   	</attribute>
+  </complexType>
+ </element>
+</schema>
